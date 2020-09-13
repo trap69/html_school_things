@@ -22,6 +22,7 @@
 			</fieldset>
 		</form>
 			<h1>Pasitikrinkite sąskaitos adresą</h1>
+			<form>
 				<fieldset>Lytis<a style="color:red">*</a>
 				<select>
 				<option selected disabled>Pasrinkite lytį</option>
@@ -30,20 +31,16 @@
 				<option>Kita</option>
 			</select>
 			</fieldset>
-		<fieldset>Vardas:<a style="color:red">*</a><input type="Vardas" name=""size="20"required>
+		<fieldset>Vardas:<a style="color:red">*</a><input type="text" name="Vardas" size="20" required>
 		</fieldset>
-		<fieldset>Pavardė:<a style="color:red">*</a><input type="Pavardė" name="" size="20"required></fieldset>
+		<fieldset>Pavardė:<a style="color:red">*</a><input type="text" name="Pavardė" size="20" required></fieldset>
 		<fieldset>Gatvė, namo(buto) nr.:<a style="color:red">*</a><input type="text" name="Gatvė" size="20" required>
-		</span>
-    <span class="adresas">
-      <input id="namo_nr" name="namo_nr" type="text" required placeholder="" pattern="[0-9]*">
-      <span class="validity"></span>
-    </span>
+      	<input id="namo_nr" name="namo_nr" type="text" required placeholder="" pattern="[0-9]*">
 		</fieldset>
-		<fieldset>Pašto kodas:<a style="color:red">*</a><input type="text" name="Pašto_kodas" inputmode="numeric" pattern="[0-9]*"  size="20" required><p><a href="https://www.post.lt/pasto-kodu-ir-adresu-paieska">Pašto kodo paieška</a></p></fieldset>
-		<fieldset>Miestas:<a style="color:red">*</a><input type="text" name="" size="20"required></fieldset>
+		<fieldset>Pašto kodas:<a style="color:red">*</a><input type="text" name="Pašto_kodas" pattern="[0-9]*"  size="20" required><p><a href="https://www.post.lt/pasto-kodu-ir-adresu-paieska">Pašto kodo paieška</a></p></fieldset>
+		<fieldset>Miestas:<a style="color:red">*</a><input type="text" name="Miestas" size="20" required></fieldset>
 		<fieldset>Šalis:<a style="color:red">*</a>
-			<select id="country" name="Šalis" class="form-control">
+			<select id="country" name="Šalis">
 				<option selected disabled>-</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
@@ -60,14 +57,13 @@
                 <option value="Lithuania">Lithuania</option>
             </select>
 		</fieldset>
-			</fieldset>
 		<fieldset>Telefonas:<a style="color:red">*</a>
-			<input type="tel" id="phone" name="phone" placeholder="+" pattern="[\+]\d{11}" size="20" required></fieldset>
-			</fieldset>
+			<input type="tel" id="phone" name="phone" placeholder="+" pattern="[\+]\d{11}" size="20" required>
+		</fieldset>
        		<fieldset><a>Papildoma informacija:</a>
-       			<div><p><font color="gray">(Pavyzdžiui vartelių/durų kodas)</font></p></div>
+       			<div><p><a style="color:gray">(Pavyzdžiui vartelių/durų kodas)</a></p></div>
 			<textarea placeholder=""></textarea>
-			<p><font color="gray">Prašome užpildyti visus pažymėtus laukus</font><a style="color:red">*</a></font></p>
+			<p><a style="color:gray">Prašome užpildyti visus pažymėtus laukus</a><a style="color:red">*</a></p>
 			</fieldset>
 			<fieldset>
 			<button type="submit">Registruotis</button>
