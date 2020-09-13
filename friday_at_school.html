@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+	<title>HTML forma</title>
+	<meta charset="utf-8">
+	<!-- Formos kurimas -->
+</head>
+<body>
+	<h1>Anketa</h1>
+	<form>
+		<fieldset>
+		<input type="text" placeholder="Vardas" required>
+		</fieldset>
+		<fieldset>
+			<input type="email" placeholder="El. paštas" required>
+		</fieldset>
+		<fieldset>
+			<input type="date" placeholder="Gimimo data" required>
+		</fieldset>
+		<fieldset>
+			<label>Akių spalva</label>
+			<input type="color" required>
+		</fieldset>
+		<fieldset>
+			<select>
+				<option selected disabled>Pasrinkite dydį</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<textarea placeholder="Žinutė"></textarea>
+		</fieldset>
+		<fieldset>
+			<input type="checkbox">
+			<label>Sutinku:</label>
+		</fieldset>
+		<fieldset>
+			<button type="submit">Saugoti</button>
+		</fieldset>
+	<p>
+ <label>Enter your phone number in the format (123)456-7890 
+  (<input name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit area code" size="2"/>)-
+   <input name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit prefix" size="2"/> - 
+   <input name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" aria-label="4-digit number" size="3"/>
+ </label>
+</p>
+	</form>
+
+
+</body>
+</html>
